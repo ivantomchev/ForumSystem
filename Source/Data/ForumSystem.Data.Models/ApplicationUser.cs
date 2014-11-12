@@ -4,10 +4,11 @@
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
     using System;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Security.Claims;
     using System.Threading.Tasks;
 
-    public class ApplicationUser : IdentityUser,IAuditInfo,IDeletableEntity
+    public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {
         public ApplicationUser()
         {
@@ -26,11 +27,12 @@
 
         public bool PreserveCreatedOn { get; set; }
 
-        public DateTime? ModifiedOn{ get; set; }
+        public DateTime? ModifiedOn { get; set; }
 
-        public bool IsDeleted{ get; set; }
+        [Index]
+        public bool IsDeleted { get; set; }
 
-        public DateTime? DeletedOn{ get; set; }
+        public DateTime? DeletedOn { get; set; }
 
     }
 }
