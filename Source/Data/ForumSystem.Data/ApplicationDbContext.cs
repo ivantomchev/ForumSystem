@@ -21,6 +21,8 @@
             return new ApplicationDbContext();
         }
 
+        public IDbSet<Post> Posts { get; set; }
+
         public override int SaveChanges()
         {
             this.ApplyAuditInfoRules();
