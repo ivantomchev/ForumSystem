@@ -53,9 +53,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\ForumSystem.Data.Common\ForumSystem.Data.Common.csproj">
+      <Project>{916d286d-89c7-4411-a358-ad0bf83be705}</Project>
+      <Name>ForumSystem.Data.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ForumSystem.Data.Models\ForumSystem.Data.Models.csproj">
       <Project>{4bcb733f-f4c8-421d-8347-070f12d276fc}</Project>
       <Name>ForumSystem.Data.Models</Name>
