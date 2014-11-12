@@ -13,5 +13,41 @@
         public bool IsDeleted { get; set; }
 
         public System.DateTime? DeletedOn { get; set; }
+
+        public System.DateTime CreatedOn
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        public bool PreserveCreatedOn
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        public System.DateTime? ModifiedOn
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+                throw new System.NotImplementedException();
+            }
+        }
     }
 }
