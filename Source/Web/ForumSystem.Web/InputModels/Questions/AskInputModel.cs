@@ -12,7 +12,7 @@
         public string Title { get; set; }
 
         [AllowHtml]
-        [DataType(DataType.MultilineText)]
+        [DataType("tinymce_full")]
         public string Content { get; set; }
 
         public string Tags { get; set; }
