@@ -9,12 +9,15 @@
 
     public class AskInputModel
     {
+        [Required]
         public string Title { get; set; }
 
+        [Required]
         [AllowHtml]
         [DataType("tinymce_full")]
         public string Content { get; set; }
 
+        [Required]
         public string Tags { get; set; }
     }
 }

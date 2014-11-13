@@ -1,0 +1,12 @@
+﻿@model ForumSystem.Web.ViewModels.Questions.QuestionDisplayViewModel
+
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+<div>
+    @Html.Raw(Model.Content)
+</div>

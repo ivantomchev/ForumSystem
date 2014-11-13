@@ -11,19 +11,23 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <div>
+        <div class="row">
             @Html.LabelFor(model => model.Title)
             @Html.EditorFor(model => model.Title)
         </div>
 
-        <div>
+        <div class="row">
             @Html.LabelFor(model => model.Content)
             @Html.EditorFor(model => model.Content)
         </div>
 
-        <div>
+        <div class="row">
             @Html.LabelFor(model => model.Tags)
             @Html.EditorFor(model => model.Tags)
+        </div>
+
+        <div class="row">
+           <input type="submit" value="Ask Question" class="btn bg-primary" />
         </div>
     </div>
 }

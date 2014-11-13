@@ -8,8 +8,8 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using ForumSystem.Web.Models;
 using ForumSystem.Data.Models;
+using ForumSystem.Web.ViewModels.Account;
 
 namespace ForumSystem.Web.Controllers
 {
