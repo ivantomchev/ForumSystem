@@ -76,6 +76,7 @@ namespace ForumSystem.Web.App_Start
             kernel.Bind(typeof(IRepository<>)).To(typeof(GenericRepository<>));
 
             kernel.Bind<ISanitizer>().To<HtmlSanitizerAdapter>();
+            //test
         }        
     }
 }
